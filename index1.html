@@ -4,69 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | UDB Library</title>
-
-    <link rel="stylesheet" href="assets/css/home.css">
+    <title>UDB Library</title>
+    <link rel="stylesheet" href="assets/css/mystyle.css">
 </head>
 <body>
-    
-    <!-- Header -->
-    <header>
-        <!-- <div class="nav container mx-auto">
-            <div class="kiri">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 logo-brand" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
-                </svg>
-                <a href="#" class="logo">UDB Library</a>
-            </div>
-            <div class="menu none">
-                <a href="#">Home</a>
-                <a href="#">Books</a>
-                <a href="#">About</a>
-            </div>
-            <input type="search" class="search none" placeholder="Search">
-            <div class="kanan right none">
-                
-                <a href="#" class="guest none"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" class="logo-user" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3"/><circle cx="12" cy="10" r="3"/><circle cx="12" cy="12" r="10"/></svg> Hi Guest</a>
-            </div>
-        </div> -->
+
+    <!-- Nav  -->
+    <nav>
         <div class="container mx-auto">
-            <div class="nav">
-                <div class="logo">
-                    <h3>UDB Library</h3>
-                </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Books</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-                <!-- <input type="search" class="search" placeholder="Search..." name="" id=""> -->
-                <div class="as">
-                    <a href="#" class="user">User</a>
-                </div>
+            <div class="nav flex justify-between">
+                <li><a href="#" class="font-bold text-left logo">UDB Library</a></li>
+                <li><a href="#" class="font-thin text-center link">Home</a></li>
+                <li><a href="#" class="font-thin text-center link active">Books</a></li>
+                <li><a href="#" class="font-thin text-center link">About</a></li>
+                <li><a href="#" class="font-thin text-right link active">Hi, Guest</a></li>
             </div>
         </div>
-    </header>
-    <!-- End Header -->
+    </nav>
+     <!-- End Nav -->
 
 
 
-    <!-- Main -->
-    <main>
+     <!-- Main -->
+     <main>
         <div class="container mx-auto">
 
             <!-- Banner -->
-            <!-- <div class="banner flex align-center">
+            <div class="banner flex align-center">
                 <div class="gambar-banner flex justify-center">
                     <img src="/assets/img/book-alt.png" alt="Book">
                 </div>
                 <div class="judul-banner">
                     <h1>Event Baca Buku</h1>
                 </div>
-            </div> -->
+            </div>
             <!-- End Banner -->
 
-            <div class="cards1 flex gap-sm gap-y justify-around wrap mx-auto">
+            <div class="cards1 flex gap-2 gap-y justify-around wrap mx-auto">
 
                 <div class="card1">
                     <div class="thumb">
@@ -84,7 +58,7 @@
                             </svg>
                             <p>4.5</p>
                     </div>                
-                    <button class="pinjam">Detail</button>
+                    <button class="pinjam">Pinjam</button>
                 </div>
 
                 <div class="card1">
@@ -103,7 +77,7 @@
                             </svg>
                             <p>4.5</p>
                     </div>                
-                    <button class="pinjam">Detail</button>
+                    <button class="pinjam">Pinjam</button>
                 </div>
 
                 <div class="card1">
@@ -122,7 +96,7 @@
                             </svg>
                             <p>4.5</p>
                     </div>                
-                    <button class="pinjam">Detail</button>
+                    <button class="pinjam">Pinjam</button>
                 </div>
 
                 <div class="card1">
@@ -141,7 +115,7 @@
                             </svg>
                             <p>4.5</p>
                     </div>                
-                    <button class="pinjam">Detail</button>
+                    <button class="pinjam">Pinjam</button>
                 </div>
 
                 <div class="card1">
@@ -160,7 +134,7 @@
                             </svg>
                             <p>4.5</p>
                     </div>                
-                    <button class="pinjam">Detail</button>
+                    <button class="pinjam">Pinjam</button>
                 </div>
 
                 <div class="card1">
@@ -179,7 +153,7 @@
                             </svg>
                             <p>4.5</p>
                     </div>                
-                    <button class="pinjam">Detail</button>
+                    <button class="pinjam">Pinjam</button>
                 </div>
 
             </div>
@@ -200,18 +174,17 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer container mx-auto flex-reverse justify-between">            
+        <div class="container mx-auto foot">
+            <div class="cpr">
+                <p>© 2022 UDB Library. All rights reserved.</p>
+            </div>
             <div class="contact">
                 <!-- <li><a href="#">Facebook</a></li> -->
                 <li><a href="#">Github</a></li>
                 <li><a href="#">Instagram</a></li>
             </div>
-            <div class="cpr">
-                <p>© 2022 UDB Library. All rights reserved.</p>
-            </div>
         </div>
     </footer>
     <!-- End Footer -->
-            
 </body>
 </html>

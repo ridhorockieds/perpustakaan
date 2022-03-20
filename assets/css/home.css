@@ -1,0 +1,330 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+/* End CSS Reset */
+
+/* Preset */
+.container {
+    width: 100%;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap-sm {
+  gap: 3rem;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center  {
+  justify-content: center;
+}
+
+.align-items {
+  align-items: center ;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-5{
+  height: 1.5rem;
+}
+.w-5{
+
+  width: 1.5rem;
+}
+
+/* EndPreset */
+
+
+/* Header */
+
+/* .nav {
+  height: 70px;
+  line-height: 70px;
+  padding: 0 20px;
+}
+
+.kiri {
+  float: left;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+} */
+
+header {
+  background-color: whitesmoke;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  margin: 0 0 0 20px;
+}
+
+.logo h3 {
+  text-align: center;
+  color: slateblue;
+  font-size: 1.2em;
+}
+
+.nav ul {
+  display: none;
+  width: 40%;
+}
+
+.nav ul li a {
+  padding: 10px 20px;
+}
+
+.nav ul li a:hover {
+  background-color: slateblue;
+  color: whitesmoke;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.search {
+  display: none;
+}
+
+.user {
+  display: none;
+}
+
+
+
+
+/* End Header */
+
+
+/* Main */
+.cards1 {
+  padding: 40px 0;
+}
+
+.card1 {
+  background-color: whitesmoke;
+  padding: 20px;
+  width: 300px;
+  border-radius: 6px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.thumb {
+  width: 100%;
+}
+
+.thumb>img{
+  width: 100%;
+  border-radius: 6px;
+}
+
+.judul1 p {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.desc p {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.rating {
+  justify-content: center;
+}
+
+.pinjam {
+  margin-top: 20px;
+  padding: 16px 0;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #262626;
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+.pinjam:hover {
+  background-color: black;
+  transition: 0.2s ease-in-out;
+}
+
+.a {
+  display: block;
+  font-size: 20px;
+}
+/* End Main */
+
+
+/* Footer */
+footer {
+  background-color: #262626;
+  overflow: hidden;
+  color: whitesmoke;
+}
+
+.cpr {
+  padding: 20px;
+}
+
+.contact {
+  display: flex;
+  padding: 20px;
+}
+
+.contact li a{
+  margin: 0 10px;
+  color: whitesmoke;
+  text-align: center;
+}
+/* End Footer */
+
+
+
+
+/* Responsive */
+  
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .logo h3 {
+    font-size: 1.4em;
+  }
+
+  .nav ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav ul {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+  }
+
+  .search {
+    font-size: medium;
+    display: flex;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    outline: 1px solid slateblue;
+    background-color: whitesmoke;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .search:focus {
+    outline: 2px solid slateblue;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(245, 245, 245);
+  }
+
+  .as {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .user {
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: inline;
+    background-color: gray;
+    color: whitesmoke;
+  }
+
+  .user:hover {
+    background-color: rgb(100, 100, 100);
+    transition: all 0.2s ease-in-out;
+  }
+}
+  
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+
+    .logo h3 {
+      font-size: 1.6em;
+    }
+    
+  }
+  /* Large Screen */
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+/* End Responsive */

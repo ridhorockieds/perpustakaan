@@ -160,28 +160,32 @@ nav {
 
 /* Banner */
 .banner {
-    margin-top: 30px;
+    margin: 30px 30px 0 30px;
+
     /* height: 300px; */
     padding: 50px;
     background-color: #3353BC;
     border-radius: 8px;
+    flex-direction: row-reverse;
 }
 
 .judul-banner {
+    width: 50%;
     color: whitesmoke;
     font-size: 50px;
-    background-color: salmon;
+    /* background-color: salmon; */
+}
+
+.gambar-banner {
+    width: 50%;
 }
 
 .gambar-banner img {
-    width: 200px;
+    width: 250px;
+    /* background-color: slateblue; */
+    align-content: center;
 }
 
-.banner:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 /* End Banner */
 
 /* End Nav */
@@ -191,7 +195,6 @@ nav {
 /* Main */
 main {
     background-color: #F7F7F7;
-    /* height: 1000px; */
 }
 
 .cards {
@@ -351,7 +354,9 @@ footer {
 
 
 
-
+.nav {
+    display: none;
+}
 
 
 
@@ -375,6 +380,10 @@ footer {
 @media (min-width: 640px) {
     .container {
       max-width: 640px;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
     }
   }
   
@@ -401,16 +410,4 @@ footer {
       max-width: 1536px;
     }
   }
-/*   
-  .fixed {
-    position: fixed;
-  }
-  
-  .absolute {
-    position: absolute;
-  }
-  
-  .relative {
-    position: relative;
-  } */
 /* End Responsive */
