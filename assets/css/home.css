@@ -1,13 +1,17 @@
 /* CSS Reset */
-* {
+
+/* Dipindah ke Internal CSS */
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: whitesmoke;
+  
+  /* Dipindah ke Inline CSS */
+  /* background-color: whitesmoke; */
 }
 
 a {
@@ -94,20 +98,6 @@ button {
 
 
 /* Header */
-
-/* .nav {
-  height: 70px;
-  line-height: 70px;
-  padding: 0 20px;
-}
-
-.kiri {
-  float: left;
-  display: flex;
-  align-items: center;
-  font-weight: 900;
-} */
-
 header {
   background-color: whitesmoke;
 }
@@ -123,9 +113,10 @@ header {
 }
 
 .logo h3 {
-  text-align: center;
+  display: block;
+  /* text-align: center; */
   color: slateblue;
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
 .nav ul {
@@ -144,29 +135,66 @@ header {
   transition: all 0.2s;
 }
 
-.search {
-  display: none;
-}
-
 .user {
   display: none;
 }
-
-
-
-
 /* End Header */
 
 
 /* Main */
+/* Content Header */
+.content-header {
+  margin-top: 20px; 
+  /* background-color: salmon; */
+}
+
+.breadcumb {
+  display: block;
+  margin: 0 20px;
+}
+
+.breadcumb ul li:nth-child(1) a {
+  color: royalblue;
+}
+
+.breadcumb ul li:nth-child(2)::before {
+  content: "/";
+  padding: 0 5px;
+}
+
+.breadcumb ul {
+  display: flex;
+}
+
+.cari {
+  display: block;
+  margin: 20px 20px 0 20px;
+}
+
+.search {
+  width: 100%;
+  font-size: medium;
+  /* margin: 0 5px 0 0; */
+  margin: 0 10px 0 0;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  outline: 1px solid slateblue;
+  background-color: whitesmoke;
+  transition: all 0.2s ease-in-out;
+  /* display: none; */
+}
+/* End Content Header */
+
 .cards1 {
   padding: 40px 0;
 }
 
 .card1 {
   background-color: whitesmoke;
+  margin: 0 20px;
   padding: 20px;
-  width: 300px;
+  max-width: 350px;
   border-radius: 6px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -225,12 +253,20 @@ footer {
   color: whitesmoke;
 }
 
-.cpr {
+.footer {
+  display: block;
+  /* height: 100px; */
+}
+
+.cpr p {
   padding: 20px;
+  text-align: center;
 }
 
 .contact {
   display: flex;
+  justify-content: center;
+  /* margin: 0 auto; */
   padding: 20px;
 }
 
@@ -244,16 +280,80 @@ footer {
 
 
 
-/* Responsive */
+
+
+
+
+/* Responsive View*/
   
+/* Mobile */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+
+  /* Content Header */
+  .content-header {
+    display: flex;
+  }
+  .breadcumb {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  .cari {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin: 0 10px 0 0;
+  }
+
+  .search {
+    width: auto;
+    font-size: medium;
+    display: flex;
+    /* margin: 0 10px; */
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    outline: 1px solid slateblue;
+    background-color: whitesmoke;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .search:focus {
+    outline: 2px solid slateblue;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(245, 245, 245);
+  }
+  /* End Content Header */
+
+  /* Main */
+  .card1 {
+    max-width: 250px;
+    margin: 0;
+  }
+  /* End Main */
+
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  /* End Footer */
+}
+
 /* Tablet */
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 
+  /* Header */
   .logo {
-    width: 25%;
+    width: 20%;
   }
 
   .logo h3 {
@@ -267,36 +367,21 @@ footer {
 
   .nav ul {
     display: flex;
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-evenly;
   }
 
-  .search {
-    font-size: medium;
-    display: flex;
-    padding: 8px 16px;
-    border-radius: 6px;
-    border: none;
-    outline: 1px solid slateblue;
-    background-color: whitesmoke;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .search:focus {
-    outline: 2px solid slateblue;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    background-color: rgb(245, 245, 245);
-  }
-
   .as {
-    width: 25%;
+    width: 20%; 
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    margin: 0 10px 0 0;
   }
 
   .user {
+    margin: 0 10px 0 0;
     padding: 10px 20px;
     border-radius: 6px;
     display: inline;
@@ -308,6 +393,7 @@ footer {
     background-color: rgb(100, 100, 100);
     transition: all 0.2s ease-in-out;
   }
+  /* End Header */
 }
   
   /* Desktop */
@@ -316,9 +402,11 @@ footer {
       max-width: 1024px;
     }
 
+    /* Header */
     .logo h3 {
       font-size: 1.6em;
     }
+    /* End Header */
     
   }
   /* Large Screen */

@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | UDB Library</title>
 
+    <!-- Memanggil External CSS -->
     <link rel="stylesheet" href="assets/css/home.css">
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: whitesmoke;">
     
     <!-- Header -->
     <header>
@@ -40,9 +50,8 @@
                     <li><a href="#">Books</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
-                <!-- <input type="search" class="search" placeholder="Search..." name="" id=""> -->
                 <div class="as">
-                    <a href="#" class="user">User</a>
+                    <a href="#" class="user">Hi, Guest</a>
                 </div>
             </div>
         </div>
@@ -55,10 +64,22 @@
     <main>
         <div class="container mx-auto">
 
+            <div class="content-header">
+                <div class="breadcumb">
+                    <ul>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Books</a></li>
+                    </ul>
+                </div>
+                <div class="cari">
+                    <input type="search" class="search" placeholder="Search..." name="" id="">
+                </div>
+            </div>
+
             <!-- Banner -->
             <!-- <div class="banner flex align-center">
                 <div class="gambar-banner flex justify-center">
-                    <img src="/assets/img/book-alt.png" alt="Book">
+                    <img src="/assets/img/book-alt.png" class="h-5 w-5" alt="Book">
                 </div>
                 <div class="judul-banner">
                     <h1>Event Baca Buku</h1>
@@ -200,7 +221,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer container mx-auto flex-reverse justify-between">            
+        <div class="footer container justify-between mx-auto">            
             <div class="contact">
                 <!-- <li><a href="#">Facebook</a></li> -->
                 <li><a href="#">Github</a></li>
